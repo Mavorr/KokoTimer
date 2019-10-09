@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <SeekBar
+        android:id="@+id/TimerSeekBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="697dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/EggImageView"
+        android:layout_width="340dp"
+        android:layout_height="534dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TimerSeekBar"
+        app:srcCompat="@drawable/kocz"
+        android:contentDescription="@string/EggImageView" />
+
+    <TextView
+        android:id="@+id/CountDownTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/CountDownTextView"
+        android:textColor="#010102"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/EggImageView"
+        app:layout_constraintEnd_toStartOf="@+id/EggImageView"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toEndOf="@+id/EggImageView"
+        app:layout_constraintTop_toBottomOf="@+id/EggImageView"
+        app:layout_constraintVertical_bias="0.349" />
+
+    <Button
+        android:id="@+id/Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:onClick="buttonClicked"
+        android:text="@string/knefel"
+        app:layout_constraintBottom_toBottomOf="@+id/EggImageView"
+        app:layout_constraintEnd_toStartOf="@+id/EggImageView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/EggImageView"
+        app:layout_constraintTop_toBottomOf="@+id/CountDownTextView" />
+</android.support.constraint.ConstraintLayout>
