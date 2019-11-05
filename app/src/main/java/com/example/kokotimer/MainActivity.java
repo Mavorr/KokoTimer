@@ -16,6 +16,8 @@ public class MainActivity extends AppCompatActivity {
     Boolean counterIsActive = false;
     Button goButton;
     CountDownTimer countDownTimer;
+    TextView textViewB;
+
 
     public void resetTimer() {
 
@@ -25,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
         countDownTimer.cancel();
         goButton.setText("KNEFEL");
         counterIsActive = false;
+        textViewB.setText("Jajko gotowe!");
+
     }
 
     public void buttonClicked(View view){
@@ -79,6 +83,7 @@ public class MainActivity extends AppCompatActivity {
         TimerSeekBar = findViewById(R.id.TimerSeekBar);
         TimerTextView = findViewById(R.id.CountDownTextView);
         goButton = findViewById(R.id.Button);
+        textViewB = findViewById(R.id.textViewB);
 
         TimerSeekBar.setMax(600);
         TimerSeekBar.setProgress(240);

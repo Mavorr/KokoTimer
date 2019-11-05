@@ -26,19 +26,19 @@
     <ImageView
         android:id="@+id/EggImageView"
         android:layout_width="340dp"
-        android:layout_height="534dp"
+        android:layout_height="250dp"
         android:layout_marginStart="5dp"
         android:layout_marginLeft="5dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="5dp"
         android:layout_marginRight="5dp"
         android:layout_marginBottom="5dp"
+        android:contentDescription="@string/EggImageView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TimerSeekBar"
-        app:srcCompat="@drawable/kocz"
-        android:contentDescription="@string/EggImageView" />
+        app:srcCompat="@drawable/cygaro" />
 
     <TextView
         android:id="@+id/CountDownTextView"
@@ -51,7 +51,7 @@
         app:layout_constraintEnd_toStartOf="@+id/EggImageView"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toEndOf="@+id/EggImageView"
-        app:layout_constraintTop_toBottomOf="@+id/EggImageView"
+        app:layout_constraintTop_toBottomOf="@+id/TimerSeekBar"
         app:layout_constraintVertical_bias="0.349" />
 
     <Button
@@ -59,12 +59,11 @@
         style="@style/Widget.AppCompat.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
         android:onClick="buttonClicked"
         android:text="@string/knefel"
-        app:layout_constraintBottom_toBottomOf="@+id/EggImageView"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/EggImageView"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/EggImageView"
-        app:layout_constraintTop_toBottomOf="@+id/CountDownTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/EggImageView" />
 </android.support.constraint.ConstraintLayout>

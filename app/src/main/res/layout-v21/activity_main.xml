@@ -25,7 +25,7 @@
     <ImageView
         android:id="@+id/EggImageView"
         android:layout_width="340dp"
-        android:layout_height="534dp"
+        android:layout_height="300dp"
         android:layout_marginStart="5dp"
         android:layout_marginLeft="5dp"
         android:layout_marginTop="5dp"
@@ -36,7 +36,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TimerSeekBar"
-        app:srcCompat="@drawable/kocz"
+        app:srcCompat="@drawable/cygaro"
         android:contentDescription="@string/EggImageView" />
 
     <TextView
@@ -50,19 +50,30 @@
         app:layout_constraintEnd_toStartOf="@+id/EggImageView"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toEndOf="@+id/EggImageView"
-        app:layout_constraintTop_toBottomOf="@+id/EggImageView"
+        app:layout_constraintTop_toBottomOf="@+id/TimerSeekBar"
         app:layout_constraintVertical_bias="0.349" />
 
     <Button
         android:id="@+id/Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
         android:onClick="buttonClicked"
         android:text="@string/knefel"
-        app:layout_constraintBottom_toBottomOf="@+id/EggImageView"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/EggImageView"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/EggImageView"
+        app:layout_constraintTop_toBottomOf="@+id/EggImageView" />
+
+    <TextView
+        android:id="@+id/textViewB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textview"
+        android:textColor="@android:color/background_dark"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/EggImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/CountDownTextView" />
 </android.support.constraint.ConstraintLayout>
