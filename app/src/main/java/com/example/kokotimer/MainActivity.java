@@ -19,8 +19,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void resetTimer() {
 
-        TimerTextView.setText("0:30");
-        TimerSeekBar.setProgress(30);
+        TimerTextView.setText("4:00");
+        TimerSeekBar.setProgress(240);
         TimerSeekBar.setEnabled(true);
         countDownTimer.cancel();
         goButton.setText("KNEFEL");
@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
         goButton = findViewById(R.id.Button);
 
         TimerSeekBar.setMax(600);
-        TimerSeekBar.setProgress(30);
+        TimerSeekBar.setProgress(240);
 
         TimerSeekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
