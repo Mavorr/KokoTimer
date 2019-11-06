@@ -24,20 +24,16 @@
 
     <ImageView
         android:id="@+id/EggImageView"
-        android:layout_width="340dp"
-        android:layout_height="300dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginLeft="5dp"
+        android:layout_width="412dp"
+        android:layout_height="298dp"
         android:layout_marginTop="5dp"
-        android:layout_marginEnd="5dp"
-        android:layout_marginRight="5dp"
         android:layout_marginBottom="5dp"
+        android:contentDescription="@string/EggImageView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TimerSeekBar"
-        app:srcCompat="@drawable/cygaro"
-        android:contentDescription="@string/EggImageView" />
+        app:srcCompat="@drawable/cygaro" />
 
     <TextView
         android:id="@+id/CountDownTextView"
@@ -57,6 +53,7 @@
         android:id="@+id/Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_light"
         android:onClick="buttonClicked"
         android:text="@string/knefel"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -71,7 +68,7 @@
         android:layout_height="wrap_content"
         android:text="@string/textview"
         android:textColor="@android:color/background_dark"
-        android:textSize="25sp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/EggImageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
