@@ -33,6 +33,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TimerSeekBar"
+        app:layout_constraintVertical_bias="0.39"
         app:srcCompat="@drawable/cygaro" />
 
     <TextView
@@ -47,12 +48,13 @@
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toEndOf="@+id/EggImageView"
         app:layout_constraintTop_toBottomOf="@+id/TimerSeekBar"
-        app:layout_constraintVertical_bias="0.349" />
+        app:layout_constraintVertical_bias="0.13" />
 
     <Button
         android:id="@+id/Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
         android:background="@android:color/holo_orange_light"
         android:onClick="buttonClicked"
         android:text="@string/knefel"
@@ -60,7 +62,8 @@
         app:layout_constraintEnd_toStartOf="@+id/EggImageView"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/EggImageView"
-        app:layout_constraintTop_toBottomOf="@+id/EggImageView" />
+        app:layout_constraintTop_toBottomOf="@+id/EggImageView"
+        app:layout_constraintVertical_bias="0.75" />
 
     <TextView
         android:id="@+id/textViewB"
@@ -72,5 +75,45 @@
         app:layout_constraintBottom_toTopOf="@+id/EggImageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/CountDownTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/CountDownTextView"
+        app:layout_constraintVertical_bias="0.22000003" />
+
+    <Button
+        android:id="@+id/Button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:onClick="buttonClicked"
+        android:text="@string/miekkie"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EggImageView"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <Button
+        android:id="@+id/Button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:onClick="buttonClicked"
+        android:text="@string/twarde"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Button"
+        app:layout_constraintTop_toBottomOf="@+id/EggImageView"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <Button
+        android:id="@+id/Button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:onClick="buttonClicked"
+        android:text="@string/srednie"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Button3"
+        app:layout_constraintStart_toEndOf="@+id/Button2"
+        app:layout_constraintTop_toBottomOf="@+id/EggImageView"
+        app:layout_constraintVertical_bias="0.25" />
 </android.support.constraint.ConstraintLayout>

@@ -4,4 +4,7 @@
     <string name="CountDownTextView">4:00</string>
     <string name="EggImageView">EggImageView</string>
     <string name="textview">Z okazji 27 urodzin!</string>
+    <string name="miekkie">MIĘKKIE</string>
+    <string name="twarde">TWARDE</string>
+    <string name="srednie">ŚREDNIE</string>
 </resources>

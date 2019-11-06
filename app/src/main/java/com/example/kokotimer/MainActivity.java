@@ -16,9 +16,10 @@ public class MainActivity extends AppCompatActivity {
     TextView TimerTextView;
     SeekBar TimerSeekBar;
     Boolean counterIsActive = false;
-    Button goButton;
+    Button goButton, miekkieButton, twardeButton, srednieButton;
     CountDownTimer countDownTimer;
     TextView textViewB;
+
 
 
     public void resetTimer() {
@@ -86,10 +87,37 @@ public class MainActivity extends AppCompatActivity {
         TimerSeekBar = findViewById(R.id.TimerSeekBar);
         TimerTextView = findViewById(R.id.CountDownTextView);
         goButton = findViewById(R.id.Button);
+        miekkieButton = findViewById(R.id.Button2);
+        srednieButton = findViewById(R.id.Button4);
+        twardeButton = findViewById(R.id.Button3);
         textViewB = findViewById(R.id.textViewB);
 
         TimerSeekBar.setMax(600);
         TimerSeekBar.setProgress(240);
+
+        miekkieButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TimerSeekBar.setMax(600);
+                TimerSeekBar.setProgress(240);
+            }
+        });
+        twardeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TimerSeekBar.setMax(600);
+                TimerSeekBar.setProgress(540);
+
+            }
+        });
+
+        srednieButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TimerSeekBar.setMax(600);
+                TimerSeekBar.setProgress(330);
+            }
+        });
 
         TimerSeekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
@@ -106,6 +134,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
+
 
             }
         });
