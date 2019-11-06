@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         TimerSeekBar.setProgress(240);
         TimerSeekBar.setEnabled(true);
         countDownTimer.cancel();
-        goButton.setText("KNEFEL");
+        goButton.setText("GOTUJ");
         counterIsActive = false;
         textViewB.setText("Jajko gotowe!");
 

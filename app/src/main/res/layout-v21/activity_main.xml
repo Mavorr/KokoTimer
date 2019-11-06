@@ -24,16 +24,17 @@
 
     <ImageView
         android:id="@+id/EggImageView"
-        android:layout_width="412dp"
+        android:layout_width="0dp"
         android:layout_height="298dp"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="5dp"
         android:contentDescription="@string/EggImageView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TimerSeekBar"
-        app:layout_constraintVertical_bias="0.39"
+        app:layout_constraintVertical_bias="0.332"
         app:srcCompat="@drawable/cygaro" />
 
     <TextView
@@ -52,12 +53,13 @@
 
     <Button
         android:id="@+id/Button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="5dp"
-        android:background="@android:color/holo_orange_light"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/pot"
         android:onClick="buttonClicked"
         android:text="@string/knefel"
+        android:textSize="14sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/EggImageView"
         app:layout_constraintHorizontal_bias="0.5"
@@ -80,11 +82,14 @@
 
     <Button
         android:id="@+id/Button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/colorAccent"
+        android:layout_width="90dp"
+        android:layout_height="75dp"
+        android:background="@drawable/egg2"
         android:onClick="buttonClicked"
         android:text="@string/miekkie"
+        android:textCursorDrawable="@drawable/egg2"
+        android:textSize="14sp"
+        android:textStyle="normal|bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/Button"
         app:layout_constraintStart_toStartOf="parent"
@@ -93,11 +98,13 @@
 
     <Button
         android:id="@+id/Button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/colorAccent"
+        android:layout_width="90dp"
+        android:layout_height="75dp"
+        android:background="@drawable/egg2"
         android:onClick="buttonClicked"
         android:text="@string/twarde"
+        android:textSize="14sp"
+        android:textStyle="normal|bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/Button"
@@ -106,14 +113,17 @@
 
     <Button
         android:id="@+id/Button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/colorAccent"
+        android:layout_width="90dp"
+        android:layout_height="75dp"
+        android:background="@drawable/egg2"
         android:onClick="buttonClicked"
         android:text="@string/srednie"
+        android:textSize="14sp"
+        android:textStyle="normal|bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/Button3"
         app:layout_constraintStart_toEndOf="@+id/Button2"
         app:layout_constraintTop_toBottomOf="@+id/EggImageView"
         app:layout_constraintVertical_bias="0.25" />
+
 </android.support.constraint.ConstraintLayout>
